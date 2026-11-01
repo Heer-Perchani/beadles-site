@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beadles — Handmade Beaded Accessories in Pakistan</title>
+  <meta name="description" content="Beadles makes handmade bag charms, bracelets, keychains, phone charms, earrings, hairpins and wind chimes. Custom orders welcome. Delivery all over Pakistan. Pay with JazzCash or EasyPaisa.">
+  <meta name="keywords" content="Beadles, beadles.pk, handmade accessories Pakistan, bag charms Pakistan, beaded bracelets, phone charms, beaded keychains, handmade earrings, custom beaded gifts">
+  <link rel="canonical" href="https://beadles.pages.dev/">
+  <meta name="theme-color" content="#f7c6d0">
+
+  <!-- Social sharing preview (WhatsApp / Instagram / Facebook) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Beadles — Handmade with love 🍓">
+  <meta property="og:description" content="Handmade beaded bag charms, bracelets, phone charms & more. Custom orders welcome. Delivery all over Pakistan.">
+  <meta property="og:url" content="https://beadles.pages.dev/">
+  <!-- <meta property="og:image" content="https://beadles.pages.dev/images/og.jpg"> add once photos are ready -->
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Beadles",
+    "description": "Handmade beaded accessories — bag charms, bracelets, keychains, phone charms, earrings, hairpins and wind chimes. Custom orders welcome.",
+    "url": "https://beadles.pages.dev/",
+    "areaServed": "PK",
+    "currenciesAccepted": "PKR",
+    "paymentAccepted": "JazzCash, EasyPaisa",
+    "sameAs": ["https://www.instagram.com/beadles.pk/"]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">Beadles <span aria-hidden="true">🍓</span></a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#shop">Shop</a>
+        <a href="#custom">Custom</a>
+        <a href="#how">How to order</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="cart-btn" id="cartOpen" aria-label="Open order list">
+        🛍️ <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">🌸 Handmade with love</p>
+          <h1>Little beaded things that make you smile</h1>
+          <p class="lead">Bag charms, bracelets, phone charms, earrings and more, each one made by hand. Want something personal? We take custom orders too. We deliver all over Pakistan.</p>
+          <div class="hero-actions">
+            <a href="#shop" class="btn btn-primary">Browse the shop</a>
+            <a href="#custom" class="btn btn-ghost">Request a custom piece</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="bead b1"></div><div class="bead b2"></div><div class="bead b3"></div>
+          <div class="bead b4"></div><div class="bead b5"></div><div class="bead b6"></div>
+          <div class="hero-photo placeholder">Photo coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" class="section">
+      <div class="wrap">
+        <h2>Shop</h2>
+        <p class="section-sub">Tap <b>Add</b> on anything you like, then send us your order list.</p>
+
+        <div class="chips" role="tablist" aria-label="Filter by category">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="bag-charms">Bag charms</button>
+          <button class="chip" data-filter="bracelets">Bracelets</button>
+          <button class="chip" data-filter="keychains">Keychains</button>
+          <button class="chip" data-filter="phone-charms">Phone charms</button>
+          <button class="chip" data-filter="earrings">Earrings</button>
+          <button class="chip" data-filter="hair">Hairpins</button>
+          <button class="chip" data-filter="home">Wind chimes</button>
+        </div>
+
+        <!--
+          TO ADD A PRODUCT: copy one <article> block below.
+          - data-name  = product name (used in the order message)
+          - data-price = price text, e.g. "Rs 450"
+          - replace the <div class="placeholder"> with <img src="images/your-photo.jpg" alt="...">
+        -->
+        <div class="grid" id="productGrid">
+
+          <article class="card" data-cat="bag-charms" data-name="Beaded Bag Charm" data-price="Rs ___">
+            <div class="card-img placeholder">🎀<span>Photo coming soon</span></div>
+            <div class="card-body">
+              <h3>Beaded Bag Charm</h3>
+              <p class="desc">Cute charm for your bag, tote or backpack.</p>
+              <div class="card-foot"><span class="price">Rs ___</span><button class="add">Add</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="bracelets" data-name="Rose Quartz Bracelet" data-price="Rs ___">
+            <div class="card-img placeholder">💗<span>Photo coming soon</span></div>
+            <div class="card-body">
+              <h3>Rose Quartz Bracelet</h3>
+              <p class="desc">Soft pink rose quartz beads.</p>
+              <div class="card-foot"><span class="price">Rs ___</span><button class="add">Add</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="bracelets" data-name="Beaded Bracelet" data-price="Rs ___">
+            <div class="card-img placeholder">✨<span>Photo coming soon</span></div>
+            <div class="card-body">
+              <h3>Beaded Bracelet</h3>
+              <p class="desc">Colourful everyday bracelet, made to your size.</p>
+              <div class="card-foot"><span class="price">Rs ___</span><button class="add">Add</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="keychains" data-name="Beaded Keychain" data-price="Rs ___">
+            <div class="card-img placeholder">🔑<span>Photo coming soon</span></div>
+            <div class="card-body">
+              <h3>Beaded Keychain</h3>
+              <p class="desc">A sweet little keychain, and a perfect gift.</p>
+              <div class="card-foot"><span class="price">Rs ___</span><button class="add">Add</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="phone-charms" data-name="Phone Charm" data-price="Rs ___">
+            <div class="card-img placeholder">📱<span>Photo coming soon</span></div>
+            <div class="card-body">
+              <h3>Phone Charm</h3>
+              <p class="desc">Beaded strap to dress up your phone.</p>
+              <div class="card-foot"><span class="price">Rs ___</span><button class="add">Add</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="earrings" data-name="Beaded Earrings" data-price="Rs ___">
+            <div class="card-img placeholder">🌷<span>Photo coming soon</span></div>
+            <div class="card-body">
+              <h3>Beaded Earrings</h3>
+              <p class="desc">Light, playful earrings for every day.</p>
+              <div class="card-foot"><span class="price">Rs ___</span><button class="add">Add</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="hair" data-name="Beaded Hairpins" data-price="Rs ___">
+            <div class="card-img placeholder">🎀<span>Photo coming soon</span></div>
+            <div class="card-body">
+              <h3>Beaded Hairpins</h3>
+              <p class="desc">Pretty pins to finish any look.</p>
+              <div class="card-foot"><span class="price">Rs ___</span><button class="add">Add</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="home" data-name="Beaded Wind Chime" data-price="Rs ___">
+            <div class="card-img placeholder">🎐<span>Photo coming soon</span></div>
+            <div class="card-body">
+              <h3>Beaded Wind Chime</h3>
+              <p class="desc">A handmade chime for your room or balcony.</p>
+              <div class="card-foot"><span class="price">Rs ___</span><button class="add">Add</button></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOM -->
+    <section id="custom" class="section alt">
+      <div class="wrap custom">
+        <div>
+          <h2>Custom orders 💌</h2>
+          <p>Want your name on a bag charm, matching bracelets for friends, or a gift in someone's favourite colours? Tell us what you have in mind and we'll make it for you.</p>
+          <ul class="ticks">
+            <li>Names and initials</li>
+            <li>Your choice of colours and beads</li>
+            <li>Matching sets for friends and couples</li>
+            <li>Gifts and party favours</li>
+          </ul>
+          <button class="btn btn-primary" id="customBtn">Ask about a custom piece</button>
+        </div>
+        <div class="custom-photo placeholder">Custom work photo coming soon</div>
+      </div>
+    </section>
+
+    <!-- HOW TO ORDER -->
+    <section id="how" class="section">
+      <div class="wrap">
+        <h2>How to order</h2>
+        <ol class="steps">
+          <li><span class="num">1</span><h3>Pick your favourites</h3><p>Tap <b>Add</b> on the items you want.</p></li>
+          <li><span class="num">2</span><h3>Send your order</h3><p>Open your order list 🛍️ and send it to us. We'll confirm what's available and the total.</p></li>
+          <li><span class="num">3</span><h3>Pay</h3><p>Pay with <b>JazzCash</b> or <b>EasyPaisa</b> and send us a screenshot.</p></li>
+          <li><span class="num">4</span><h3>We make & deliver</h3><p>We pack it with love and send it to your door, anywhere in Pakistan.</p></li>
+        </ol>
+
+        <div class="pay" id="payment">
+          <h3>Payment</h3>
+          <div class="pay-methods">
+            <span class="pay-pill jazz">JazzCash</span>
+            <span class="pay-pill easy">EasyPaisa</span>
+          </div>
+          <!-- Filled in by script.js from CONFIG -->
+          <div id="payDetails"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section alt">
+      <div class="wrap faq">
+        <h2>FAQ</h2>
+        <details><summary>Do you deliver all over Pakistan?</summary><p>Yes! We deliver to every city. Delivery charges: <b>Rs ___</b>. Delivery usually takes <b>___ working days</b>.</p></details>
+        <details><summary>How long does a custom order take?</summary><p>Usually <b>___ days</b> to make, plus delivery time. Message us if you need it sooner.</p></details>
+        <details><summary>How do I pay?</summary><p>Through JazzCash or EasyPaisa. Once we confirm your order, we'll send you the payment details.</p></details>
+        <details><summary>Is cash on delivery available?</summary><p>Not right now. Orders are made after payment, because many pieces are made just for you.</p></details>
+        <details><summary>Can I see more designs?</summary><p>Yes, we post new pieces, reviews and behind-the-scenes videos on <a href="https://www.instagram.com/beadles.pk/" target="_blank" rel="noopener">Instagram @beadles.pk</a>.</p></details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="logo">Beadles 🍓</p>
+        <p class="muted">Handmade beaded accessories · Delivering across Pakistan</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/beadles.pk/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" id="footerContact">Message us</a>
+      </div>
+    </div>
+    <p class="wrap muted small">© <span id="year"></span> Beadles. All pieces handmade in Pakistan.</p>
+  </footer>
+
+  <!-- ORDER DRAWER -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Your order list" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Your order list</h2>
+      <button class="icon-btn" id="cartClose" aria-label="Close">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div id="cartView">
+        <ul id="cartItems" class="cart-items"></ul>
+        <p id="cartEmpty" class="muted">Nothing here yet. Tap <b>Add</b> on something you like 💕</p>
+
+        <form id="orderForm" class="order-form" novalidate>
+          <h3>Your details</h3>
+          <label>Name *<input name="name" required maxlength="80" autocomplete="name"></label>
+          <label>Phone *<input name="phone" type="tel" required maxlength="20" autocomplete="tel" placeholder="03XX XXXXXXX"></label>
+          <label>City *<input name="city" required maxlength="60" autocomplete="address-level2"></label>
+          <label>Address *<textarea name="address" rows="2" required maxlength="300" autocomplete="street-address"></textarea></label>
+          <label>Instagram username <span class="opt">(optional)</span><input name="instagram" maxlength="40" placeholder="@yourname"></label>
+          <label id="emailField">Email <span class="opt">(optional, we'll send your receipt)</span><input name="email" type="email" maxlength="120" autocomplete="email"></label>
+          <label>Anything else? <span class="opt">(colours, names, size)</span><textarea name="note" rows="3" maxlength="500" placeholder="e.g. Bracelet in pink & white, name 'Ayesha'"></textarea></label>
+          <!-- spam trap: real people never see or fill this -->
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        </form>
+      </div>
+
+      <div id="doneView" class="done" hidden>
+        <div class="done-emoji">🎉</div>
+        <h3>Order <span id="doneId"></span> placed!</h3>
+        <p id="doneEmail" class="muted"></p>
+        <p><b>One last step:</b> send us your order so we can confirm it and share payment details.</p>
+        <button class="btn btn-primary full" id="doneIg">Send on Instagram</button>
+        <button class="btn btn-ghost full wa-btn" id="doneWa" hidden>Send on WhatsApp</button>
+        <button class="link-btn" id="doneClose">Close</button>
+      </div>
+    </div>
+    <div class="drawer-foot" id="cartFoot">
+      <button type="submit" form="orderForm" class="btn btn-primary full" id="sendOrder">Send order on Instagram</button>
+      <p class="muted small" id="sendHint">Your order gets copied, so just paste it in the DM that opens.</p>
+      <button class="btn btn-ghost full wa-btn" id="sendOrderWa" hidden>Send order on WhatsApp</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
